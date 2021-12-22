@@ -1,0 +1,267 @@
+// Importación de tipografías
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+// Reseteo de elementos
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ANCHOR Colores */
+
+    // Light Theme
+    --color-light-bg: hsl(216, 100%, 99%);
+    --color-light-bg-alt: hsl(220, 20%, 97.1%);
+    --color-light-border: hsl(222, 21.7%, 91%);
+    --color-light-lighter: hsl(214, 16%, 57.1%);
+    --color-light-light: hsl(218, 14%, 46.1%);
+    --color-light-text: hsl(216, 11.2%, 34.9%);
+    --color-light-title: hsl(219, 17.1%, 16.1%);
+
+    // Dark Theme
+    --color-dark-bg: hsl(204, 29.4%, 10%);
+    --color-dark-bg-alt: hsl(203, 16%, 15.9%);
+    --color-dark-border: hsl(205, 23.6%, 24.1%);
+    --color-dark-lighter: hsl(200, 8.2%, 64.1%);
+    --color-dark-light: hsl(203, 9.8%, 73.9%);
+    --color-dark-text: hsl(202, 9.8%, 83.9%);
+    --color-dark-title: hsl(240, 4%, 95.1%);
+
+    // Blue colors
+    --color-blue-50: hsl(210, 75%, 96.9%);
+    --color-blue-100: hsl(214, 80.4%, 90%);
+    --color-blue-200: hsl(215, 81.3%, 81.2%);
+    --color-blue-300: hsl(214, 79%, 72%);
+    --color-blue-400: hsl(215, 79.3%, 63.9%);
+    --color-blue-500: hsl(214, 79.6%, 50%);
+    --color-blue-600: hsl(214, 79.4%, 40%);
+    --color-blue-700: hsl(214, 79.1%, 30%);
+    --color-blue-800: hsl(214, 80.4%, 20%);
+    --color-blue-900: hsl(214, 80.4%, 10%);
+    --color-blue-950: hsl(216, 76.9%, 5.1%);
+
+    // Purple colors
+    --color-purple-50: hsl(274, 87.5%, 96.9%);
+    --color-purple-100: hsl(273, 92.2%, 90%);
+    --color-purple-200: hsl(274, 92.2%, 80%);
+    --color-purple-300: hsl(274, 92.2%, 70%);
+    --color-purple-400: hsl(274, 92.2%, 60%);
+    --color-purple-500: hsl(274, 92.2%, 50%);
+    --color-purple-600: hsl(274, 92.2%, 40%);
+    --color-purple-700: hsl(274, 92.2%, 30%);
+    --color-purple-800: hsl(274, 92.2%, 20%);
+    --color-purple-900: hsl(273, 92.2%, 10%);
+    --color-purple-950: hsl(274, 92%, 4.9%);
+
+    // Orange colors
+    --color-orange-50: hsl(32, 100%, 97.1%);
+    --color-orange-100: hsl(33, 100%, 90.8%);
+    --color-orange-200: hsl(34, 100%, 81.6%);
+    --color-orange-300: hsl(34, 100%, 72.4%);
+    --color-orange-400: hsl(34, 100%, 63.1%);
+    --color-orange-500: hsl(34, 100%, 53.9%);
+    --color-orange-600: hsl(34, 100%, 43.1%);
+    --color-orange-700: hsl(34, 100%, 32.4%);
+    --color-orange-800: hsl(34, 100%, 21.6%);
+    --color-orange-900: hsl(34, 100%, 10.8%);
+    --color-orange-950: hsl(32, 100%, 5.5%);
+
+    // Red colors
+    --color-red-50: hsl(8, 100%, 97.1%);
+    --color-red-100: hsl(9, 100%, 92%);
+    --color-red-200: hsl(8, 100%, 82.9%);
+    --color-red-300: hsl(8, 100%, 72.9%);
+    --color-red-400: hsl(8, 100%, 63.9%);
+    --color-red-500: hsl(8, 100%, 55.1%);
+    --color-red-600: hsl(8, 100%, 43.9%);
+    --color-red-700: hsl(8, 100%, 32%);
+    --color-red-800: hsl(8, 100%, 22.9%);
+    --color-red-900: hsl(8, 100%, 10%);
+    --color-red-950: hsl(7, 100%, 5.1%);
+
+    // Grey colors
+    --color-grey-50: hsl(210, 10%, 96.1%);
+    --color-grey-100: hsl(180, 4.3%, 91%);
+    --color-grey-200: hsl(204, 5.2%, 81%);
+    --color-grey-300: hsl(202, 5.4%, 71%);
+    --color-grey-400: hsl(207, 5.5%, 61%);
+    --color-grey-500: hsl(208, 6%, 51.2%);
+    --color-grey-600: hsl(210, 5.9%, 40%);
+    --color-grey-700: hsl(207, 5.9%, 30%);
+    --color-grey-800: hsl(210, 5.9%, 20%);
+    --color-grey-900: hsl(200, 5.9%, 10%);
+    --color-grey-950: hsl(210, 7.7%, 5.1%);
+
+    /* ANCHOR Tipografías */
+
+    // Font family
+    --ff-title: "Montserrat Alternates", sans-serif;
+    --ff-text: "Open Sans", sans-serif;
+
+    // Font size
+    --fs-bigger: 3.25rem;
+    --fs-h1: 2.75rem;
+    --fs-h2: 2.375rem;
+    --fs-h3: 1.875rem;
+    --fs-h4: 1.5rem;
+    --fs-text: 1rem;
+    --fs-light: 0.938rem;
+    --fs-lighter: 0.875rem;
+
+    // Font weight
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-regular: 400;
+
+    // Line height
+    --lh-title: 150%;
+    --lh-text: 160%;
+
+    // Letter spacing
+    --ls-title: 0.01rem;
+
+    /* ANCHOR Spacings */
+
+    // Margins
+    --margin-body: 7.5rem;
+    --margin-topbar: 5rem;
+
+    // Gap
+    --gap: 1rem;
+    --main-gap: 8rem;
+}
+
+// Tipografías
+.bigger {
+    color: var(--color-dark-title);
+    font-size: var(--fs-bigger);
+    font-family: var(--ff-title);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-title);
+    letter-spacing: var(--ls-title);
+}
+
+h1 {
+    color: var(--color-dark-title);
+    font-size: var(--fs-h1);
+    font-family: var(--ff-title);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-title);
+    letter-spacing: var(--ls-title);
+}
+
+h2 {
+    color: var(--color-dark-title);
+    font-size: var(--fs-h2);
+    font-family: var(--ff-title);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-title);
+    letter-spacing: var(--ls-title);
+}
+
+h3 {
+    color: var(--color-dark-title);
+    font-size: var(--fs-h3);
+    font-family: var(--ff-title);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-title);
+    letter-spacing: var(--ls-title);
+}
+
+h4 {
+    color: var(--color-dark-title);
+    font-size: var(--fs-h4);
+    font-family: var(--ff-title);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-title);
+    letter-spacing: var(--ls-title);
+}
+
+.text-regular {
+    color: var(--color-dark-text);
+    font-size: var(--fs-text);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-text);
+}
+
+.text-semibold {
+    color: var(--color-dark-text);
+    font-size: var(--fs-text);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-text);
+}
+
+.small-regular {
+    color: var(--color-dark-light);
+    font-size: var(--fs-light);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-text);
+}
+
+.small-semibold {
+    color: var(--color-dark-light);
+    font-size: var(--fs-light);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-text);
+}
+
+.smaller-regular {
+    color: var(--color-dark-lighter);
+    font-size: var(--fs-lighter);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-text);
+}
+
+.smaller-semibold {
+    color: var(--color-dark-lighter);
+    font-size: var(--fs-lighter);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-text);
+}
+
+/* ANCHOR Sistema de diseño */
+.button {
+    display: inline-flex;
+    gap: .5rem;
+    padding: .75rem 1.5rem;
+    background-color: var(--color-blue-500);
+    color: white;
+    transition: all 150ms ease;
+
+    &:hover {
+        background-color: var(--color-blue-600);
+        transition: all 150ms ease;
+    }
+
+    &:active {
+        transform: scale(1.05);
+    }
+}
+
+input {
+    display: flex;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-dark-border);
+    flex-wrap: nowrap;
+}
+
+// Estilos de la web
+
+header {
+    .container {
+        display: flex;
+        min-width: 100vw;
+        min-height: 4rem;
+        border: 1px solid red;
+    }
+}
