@@ -51,7 +51,31 @@
         </div>
         <div class="right">
             <div class="container">
-
+                <h3>Paga con tarjeta</h3>
+                <form class="form">
+                    <div id="input-name">
+                        <label class="small-semibold">Nombre como aparece en la tarjeta:</label>
+                        <input class="smaller-regular" placeholder="Ej. Roberto Lopez Muñoz" type="text" required>
+                    </div>
+                    <div id="input-number">
+                        <label class="small-semibold">Numeración de la tarjeta:</label>
+                        <input class="smaller-regular" placeholder="Ingrese los 16 dígitos de su tarjeta" type="number"
+                            required>
+                    </div>
+                    <div class="two-inputs">
+                        <div id="input-expirity">
+                            <label class="small-semibold">Vencimiento de la tarjeta:</label>
+                            <input class="smaller-regular" type="month" required>
+                        </div>
+                        <div id="input-cvv">
+                            <label class="small-semibold">CVV / VVC:</label>
+                            <input class="smaller-regular" placeholder="XXX" type="number" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="button small-semibold">Paga ahora tu servicio
+                        <img src="/resources/svg/Icon_chevron.svg">
+                    </button>
+                </form>
             </div>
         </div>
     </main>
